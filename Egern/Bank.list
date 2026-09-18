@@ -1,0 +1,40 @@
+# > HK Bank 规则集
+
+# 精确域名匹配 (HOST -> domain_set)
+domain_set:
+  - c-hsbc.lytics.io
+  - mobile.eum-appdynamics.com
+  - tags.tiqcdn.com
+  - hsbc.edge.sdk.awswaf.com
+  - cdnbc.wup.hsbc.com.hk
+  - cdn.optimizely.com
+  - log-58144bf0.we-stats.com
+  - app-measurement.com
+  - api.mixpanel.com
+
+# 后缀域名匹配 (HOST-SUFFIX -> domain_suffix_set)
+domain_suffix_set:
+  # HSBC
+  - tealiumiq.com
+  - hsbc.com.hk
+  - online-metrix.net
+  - cloud1.vv1865.com
+  - liveperson.net
+  - lpsnmedia.net
+
+  # 大象银行
+  - elebank.com
+  - appsflyersdk.com
+
+  # 众安银行
+  - za.group
+  - zainvest.group
+  - crashlytics.com
+  - zajourney.com
+
+  # Wise
+  - wise.com
+
+# 通配符域名匹配 (HOST-WILDCARD -> domain_wildcard_set)
+# domain_wildcard_set:
+#   - "api*.futunn.com"
